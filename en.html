@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C++ Course — From Zero to Confident | NextGen Academy</title>
+<meta name="description" content="A complete 50-lecture C++ course: basics, variables, conditions, loops, functions, arrays, strings, pointers and files. Monthly subscription, 3 lectures a week (video + PDF + tasks) and private follow-up with a monitor.">
+<meta name="theme-color" content="#071329">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NextGen Academy">
+<meta property="og:title" content="C++ Course — From Zero to Confident | NextGen Academy">
+<meta property="og:description" content="50 lectures, 3 a week, video + PDF + tasks, and private follow-up with a monitor.">
+<!-- بعد رفع الموقع: ضع هنا الرابط الكامل للصورة / After hosting, use the full image URL: https://YOUR-DOMAIN/assets/images/instructor.webp -->
+<meta property="og:image" content="assets/images/instructor.webp">
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
+<link rel="apple-touch-icon" href="assets/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Course","name":"C++ Course — From Zero to Confident","description":"A complete 50-lecture C++ course on a monthly subscription.","provider":{"@type":"Organization","name":"NextGen Academy"},"inLanguage":"en"}
+</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></symbol>
+<symbol id="i-file" viewBox="0 0 24 24"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></symbol>
+<symbol id="i-tasks" viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></symbol>
+<symbol id="i-chev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></symbol>
+<symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+<symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></symbol>
+<symbol id="i-flow" viewBox="0 0 24 24"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M6 9v3a3 3 0 0 0 3 3h6"/></symbol>
+<symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></symbol>
+<symbol id="i-zap" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+<symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+<symbol id="i-fb" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></symbol>
+<symbol id="i-tg" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a class="brand" href="#home" aria-label="NextGen Academy"><img src="assets/images/logo.png" alt="NextGen Academy" width="78" height="62"></a>
+    <nav class="nav-links" id="nav-links" aria-label="Main navigation"><a href="#curriculum">Curriculum</a><a href="#how">How it works</a><a href="#private">Private follow-up</a><a href="#tasks">Tasks</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav>
+    <div class="nav-actions">
+      <a class="lang-switch" href="index.html" hreflang="ar" lang="ar" data-lang-switch><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg><span>العربية</span></a>
+      <a class="btn btn-primary btn-sm" href="#pricing">Subscribe now</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu"><svg class="icon i-open" aria-hidden="true"><use href="#i-menu"/></svg><svg class="icon i-close" aria-hidden="true"><use href="#i-x"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="blueprint" aria-hidden="true"></div>
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow reveal"><span class="num">C++</span>A course from zero to confident</span>
+      <h1 class="reveal" style="--d:.05s">Learn <span class='grad'>C++</span> step by step and build a solid programming foundation</h1>
+      <p class="lead reveal" style="--d:.1s">A complete 50-lecture course on a monthly subscription: 3 lectures every week, each with a video lesson, a PDF and practice tasks — plus private follow-up with a monitor to solve any problem you hit along the way.</p>
+      <div class="hero-cta reveal" style="--d:.15s">
+        <a class="btn btn-primary" href="#pricing">Subscribe now<svg class="icon i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="#curriculum">Browse the curriculum</a>
+        <a class="btn btn-ghost" href="https://wa.me/201104534626" target="_blank" rel="noopener noreferrer" data-social="whatsapp"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-wa"/></svg>Ask on WhatsApp</a>
+      </div>
+      <ul class="hero-facts reveal" style="--d:.2s">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg>A video lesson per lecture</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>A PDF for revision</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-tasks"/></svg>Practice tasks</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg>Private follow-up</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual reveal" style="--d:.12s">
+      <svg class="hex-badge" viewBox="0 0 100 100" role="img" aria-label="C++" style="direction:ltr">
+        <defs><linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#659AD2"/><stop offset="1" stop-color="#004482"/></linearGradient></defs>
+        <polygon points="50,6 90,28 90,72 50,94 10,72 10,28" fill="url(#hg)" stroke="url(#hg)" stroke-width="7" stroke-linejoin="round"/>
+        <text x="50" y="62" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="33" fill="#F7FAFF">C++</text>
+      </svg>
+      <div class="portrait"><img src="assets/images/instructor.webp" width="1000" height="1000" alt="The course instructor at NextGen Academy"></div>
+      <div class="code-card" aria-hidden="true">
+        <div class="bar"><i></i><i></i><i></i><span>main.cpp</span></div>
+        <pre class="code"><span class="ln"><span class="tk-pp">#include</span> <span class="tk-str">&lt;iostream&gt;</span></span><span class="ln"><span class="tk-kw">using namespace</span> std;</span><span class="ln">&nbsp;</span><span class="ln"><span class="tk-ty">int</span> <span class="tk-fn">main</span>() {</span><span class="ln">    cout &lt;&lt; <span class="tk-str">"Hello, NextGen!"</span>;</span><span class="ln">    <span class="tk-kw">return</span> 0;</span><span class="ln">}<span class="caret"></span></span></pre>
+      </div>
+      <span class="float-chip"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg>Private monitor</span>
+    </div>
+  </div>
+</section>
+
+<div class="container stats-wrap">
+  <div class="stats reveal">
+    <div class="stat"><span class="n"><span data-count="50">50</span></span><span class="l">Lectures</span></div>
+    <div class="stat"><span class="n"><span data-count="3">3</span></span><span class="l">Lectures every week</span></div>
+    <div class="stat"><span class="n"><span data-count="10">10</span></span><span class="l">Progressive sections</span></div>
+    <div class="stat"><span class="n">1<em>:</em>1</span><span class="l">Private follow-up</span></div>
+  </div>
+</div>
+
+<!-- ============ WHY C++ ============ -->
+<section class="section" id="why">
+  <div class="container split">
+    <div class="collage reveal">
+      <div class="main"><img src="assets/images/languages.webp" loading="lazy" alt="Popular programming languages"></div>
+      <div class="sub"><img src="assets/images/questions.webp" loading="lazy" alt="Beginner questions about programming"></div>
+    </div>
+    <div>
+      <div class="sec-head" style="margin-bottom:0">
+        <span class="eyebrow reveal"><span class="num">01</span>Why this course</span>
+        <h2 class="reveal">Why start programming with C++?</h2>
+        <p class="reveal">Because it teaches you to think like a programmer: you see how code really runs, you control memory, and you build a base that makes every other language easier.</p>
+      </div>
+      <div class="why-grid"><article class="why-card reveal" style="--d:0.00s"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg><h3>A strong base for every language</h3><p>Variables, conditions and functions carry over to any language you learn next.</p></article><article class="why-card reveal" style="--d:0.07s"><svg class="icon" aria-hidden="true"><use href="#i-flow"/></svg><h3>Logical thinking and problem solving</h3><p>You practice turning a problem into clear steps before writing code.</p></article><article class="why-card reveal" style="--d:0.14s"><svg class="icon" aria-hidden="true"><use href="#i-cpu"/></svg><h3>A deeper view of memory</h3><p>With pointers you see how data is stored and how a program reaches it.</p></article><article class="why-card reveal" style="--d:0.21s"><svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg><h3>A skill in demand</h3><p>C++ powers games, systems software, competitive programming and anything performance-critical.</p></article></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CURRICULUM ============ -->
+<section class="section section--mid" id="curriculum">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow reveal"><span class="num">02</span>Curriculum</span>
+      <h2 class="reveal">The curriculum: 50 lectures in 10 sections</h2>
+      <p class="reveal">A gradual journey from zero to solving real problems — every section builds on the one before.</p>
+    </div>
+    <div class="roadmap reveal">
+      <div class="roadmap-bar" role="group" aria-label="Map of the 50 lectures"><button type="button" class="rm-group" style="--n:6;--i:0" data-target="mod-1" title="01–06 · Introduction" aria-label="Section 1: 01–06"><i></i><i></i><i></i><i></i><i></i><i></i></button><button type="button" class="rm-group" style="--n:6;--i:1" data-target="mod-2" title="07–12 · Variables, Operators, Input &amp; Output" aria-label="Section 2: 07–12"><i></i><i></i><i></i><i></i><i></i><i></i></button><button type="button" class="rm-group" style="--n:2;--i:2" data-target="mod-3" title="13–14 · The if Statement" aria-label="Section 3: 13–14"><i></i><i></i></button><button type="button" class="rm-group" style="--n:5;--i:3" data-target="mod-4" title="15–19 · Loops" aria-label="Section 4: 15–19"><i></i><i></i><i></i><i></i><i></i></button><button type="button" class="rm-group" style="--n:5;--i:4" data-target="mod-5" title="20–24 · Functions" aria-label="Section 5: 20–24"><i></i><i></i><i></i><i></i><i></i></button><button type="button" class="rm-group" style="--n:6;--i:5" data-target="mod-6" title="25–30 · Arrays" aria-label="Section 6: 25–30"><i></i><i></i><i></i><i></i><i></i><i></i></button><button type="button" class="rm-group" style="--n:5;--i:6" data-target="mod-7" title="31–35 · Strings" aria-label="Section 7: 31–35"><i></i><i></i><i></i><i></i><i></i></button><button type="button" class="rm-group" style="--n:8;--i:7" data-target="mod-8" title="36–43 · Pointers" aria-label="Section 8: 36–43"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></button><button type="button" class="rm-group" style="--n:6;--i:8" data-target="mod-9" title="44–49 · Files" aria-label="Section 9: 44–49"><i></i><i></i><i></i><i></i><i></i><i></i></button><button type="button" class="rm-group is-last" style="--n:1;--i:9" data-target="mod-10" title="50 · Problem Solving" aria-label="Section 10: 50"><i></i></button></div>
+      <div class="roadmap-legend" aria-hidden="true"><span>01</span><span>50</span></div>
+      <p class="roadmap-hint">Click any part of the bar to open that section.</p>
+    </div>
+    <div class="modules">
+<details class="module" id="mod-1" name="curriculum" open>
+  <summary>
+    <span class="m-range">01–06</span>
+    <span class="m-title">Introduction</span>
+    <span class="m-count">6 lectures</span>
+    <svg class="icon m-chev" aria-hidden="true"><use href="#i-chev"/></svg>
+  </summary>
+  <div class="m-body"><ul class="topics"><li>What is programming?</li><li>Human language vs. programming language</li><li>How a computer works</li><li>Operating systems: files, folders and paths</li><li>Logical thinking and flowcharts</li><li>Setting up and writing your first program</li><li>Common errors and how to avoid them</li></ul><div class="m-thumbs"><img src="assets/images/natural-vs-code.webp" loading="lazy" alt="Human language vs. programming language"><img src="assets/images/os.webp" loading="lazy" alt="How a computer and its operating system work"><img src="assets/images/flow.webp" loading="lazy" alt="From idea to code"></div></div>
+</details>
+<details class="module" id="mod-2" name="curriculum">
+  <summary>
+    <span class="m-range">07–12</span>
+    <span class="m-title">Variables, Operators, Input &amp; Output</span>
+    <span class="m-count">6 lectures</span>
+    <svg class="icon m-chev" aria-hidden="true"><use href="#i-chev"/></svg>
+  </summary>
+  <div class="m-body"><ul class="topics"><li>Data types and variables</li><li><code class="code-inline">cin</code> and <code class="code-inline">cout</code></li><li>Arithmetic operators</li><li>Comparison and logical operators</li><li>Constants and type conversion</li></ul></div>
+</details>
+<details class="module" id="mod-3" name="curriculum">
+  <summary>
+    <span class="m-range">13–14</span>
+    <span class="m-title">The if Statement</span>
+    <span class="m-count">2 lectures</span>
+    <svg class="icon m-chev" aria-hidden="true"><use href="#i-chev"/></svg>
+  </summary>
+  <div class="m-body"><ul class="topics"><li><code class="code-inline">if</code> and <code class="code-inline">else</code></li><li><code class="code-inline">else if</code> and multiple conditions</li><li>Nested conditions</li><li>Combining conditions with <code class="code-inline">&amp;&amp;</code> and <code class="code-inline">||</code></li></ul></div>
+</details>
+<details class="module" id="mod-4" name="curriculum">
+  <summary>
+    <span class="m-range">15–19</span>
+    <span class="m-title">Loops</span>
+    <span class="m-count">5 lectures</span>
+    <svg class="icon m-chev" aria-hidden="true"><use href="#i-chev"/></svg>
+  </summary>
+  <div class="m-body"><ul class="topics"><li><code class="code-inline">for</code> loops</li><li><code class="code-inline">while</code> loops</li><li><code class="code-inline">do-while</code> loops</li><li>Nested loops</li><li><code class="code-inline">break</code> and <code class="code-inline">continue</code></li></ul></div>
+</details>
+<details class="module" id="mod-5" name="curriculum">
+  <summary>
+    <span class="m-range">20–24</span>
+    <span class="m-title">Functions</span>
+    <span class="m-count">5 lectures</span>
+    <svg class="icon m-chev" aria-hidden="true"><use href="#i-chev"/></svg>
+  </summary>
+  <div class="m-body"><ul class="topics"><li>Defining and calling functions</li><li>Parameters and return values</li><li>Pass by value and by reference</li><li>Organizing a program with functions</li></ul></div>
+</details>
+<details class="module" id="mod-6" name="curriculum">
+  <summary>
+    <span class="m-range">25–30</span>
+    <span class="m-title">Arrays</span>
+    <span class="m-count">6 lectures</span>
+    <svg class="icon m-chev" aria-hidden="true"><use href="#i-chev"/></svg>
+  </summary>
+  <div class="m-body"><ul class="topics"><li>Declaring arrays and accessing elements</li><li>Looping over arrays</li><li>Two-dimensional arrays</li><li>Basic searching and sorting</li><li>Arrays and functions</li></ul></div>
+</details>
+<details class="module" id="mod-7" name="curriculum">
+  <summary>
+    <span class="m-range">31–35</span>
+    <span class="m-title">Strings</span>
+    <span class="m-count">5 lectures</span>
+    <svg class="icon m-chev" aria-hidden="true"><use href="#i-chev"/></svg>
+  </summary>
+  <div class="m-body"><ul class="topics"><li>Working with <code class="code-inline">string</code></li><li>Common string functions</li><li>Comparing, searching and replacing</li><li>Practical string exercises</li></ul></div>
+</details>
+<details class="module" id="mod-8" name="curriculum">
+  <summary>
+    <span class="m-range">36–43</span>
+    <span class="m-title">Pointers</span>
+    <span class="m-count">8 lectures</span>
+    <svg class="icon m-chev" aria-hidden="true"><use href="#i-chev"/></svg>
+  </summary>
+  <div class="m-body"><ul class="topics"><li>Addresses and memory</li><li>Declaring and using pointers</li><li>Pointers and arrays</li><li>Pointers and functions</li><li>Dynamic memory with <code class="code-inline">new</code> and <code class="code-inline">delete</code></li></ul></div>
+</details>
+<details class="module" id="mod-9" name="curriculum">
+  <summary>
+    <span class="m-range">44–49</span>
+    <span class="m-title">Files</span>
+    <span class="m-count">6 lectures</span>
+    <svg class="icon m-chev" aria-hidden="true"><use href="#i-chev"/></svg>
+  </summary>
+  <div class="m-body"><ul class="topics"><li>Reading from files</li><li>Writing to files</li><li>Working with <code class="code-inline">fstream</code></li><li>Practical file exercises</li></ul></div>
+</details>
+<details class="module is-final" id="mod-10" name="curriculum">
+  <summary>
+    <span class="m-range">50</span>
+    <span class="m-title">Problem Solving</span>
+    <span class="m-count">1 lecture</span>
+    <svg class="icon m-chev" aria-hidden="true"><use href="#i-chev"/></svg>
+  </summary>
+  <div class="m-body"><ul class="topics"><li>Breaking a problem into steps</li><li>Projects that combine every section</li><li>Final review</li></ul></div>
+</details></div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS (light) ============ -->
+<section class="section section--light" id="how">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow reveal"><span class="num">03</span>How it works</span>
+      <h2 class="reveal">How does the subscription work?</h2>
+      <p class="reveal">A simple monthly subscription: 3 lectures every week, and each lecture comes with everything you need to understand and practice.</p>
+    </div>
+    <div class="deliver">
+      <article class="deliver-card reveal"><div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></div><h3>Video lesson</h3><p>A clear, detailed, step-by-step explanation of the lecture.</p></article>
+      <article class="deliver-card reveal" style="--d:.08s"><div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg></div><h3>A PDF for the lecture</h3><p>The lecture content in a file you can study and revise whenever you like.</p></article>
+      <article class="deliver-card reveal" style="--d:.16s"><div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-tasks"/></svg></div><h3>Tasks for the lecture</h3><p>Hands-on exercises after each lecture to lock in what you learned.</p></article>
+    </div>
+    <div class="month">
+      <div class="month-head reveal">
+        <h3>What your first month looks like</h3>
+        <p>About 12 lectures a month · 3 every week</p>
+      </div>
+      <div class="weeks"><article class="week reveal" style="--d:0.06s"><h4>Week 1</h4><div class="lec"><span>Lecture 1</span><span class="mini" role="img" aria-label="Video, PDF and task"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg><svg class="icon" aria-hidden="true"><use href="#i-tasks"/></svg></span></div><div class="lec"><span>Lecture 2</span><span class="mini" role="img" aria-label="Video, PDF and task"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg><svg class="icon" aria-hidden="true"><use href="#i-tasks"/></svg></span></div><div class="lec"><span>Lecture 3</span><span class="mini" role="img" aria-label="Video, PDF and task"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg><svg class="icon" aria-hidden="true"><use href="#i-tasks"/></svg></span></div>
+<div class="wk-task"><svg class="icon" aria-hidden="true"><use href="#i-tasks"/></svg><span>Weekly task</span></div></article><article class="week reveal" style="--d:0.12s"><h4>Week 2</h4><div class="lec"><span>Lecture 4</span><span class="mini" role="img" aria-label="Video, PDF and task"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg><svg class="icon" aria-hidden="true"><use href="#i-tasks"/></svg></span></div><div class="lec"><span>Lecture 5</span><span class="mini" role="img" aria-label="Video, PDF and task"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg><svg class="icon" aria-hidden="true"><use href="#i-tasks"/></svg></span></div><div class="lec"><span>Lecture 6</span><span class="mini" role="img" aria-label="Video, PDF and task"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg><svg class="icon" aria-hidden="true"><use href="#i-tasks"/></svg></span></div>
+<div class="wk-task"><svg class="icon" aria-hidden="true"><use href="#i-tasks"/></svg><span>Weekly task</span></div></article><article class="week reveal" style="--d:0.18s"><h4>Week 3</h4><div class="lec"><span>Lecture 7</span><span class="mini" role="img" aria-label="Video, PDF and task"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg><svg class="icon" aria-hidden="true"><use href="#i-tasks"/></svg></span></div><div class="lec"><span>Lecture 8</span><span class="mini" role="img" aria-label="Video, PDF and task"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg><svg class="icon" aria-hidden="true"><use href="#i-tasks"/></svg></span></div><div class="lec"><span>Lecture 9</span><span class="mini" role="img" aria-label="Video, PDF and task"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg><svg class="icon" aria-hidden="true"><use href="#i-tasks"/></svg></span></div>
+<div class="wk-task"><svg class="icon" aria-hidden="true"><use href="#i-tasks"/></svg><span>Weekly task</span></div></article><article class="week reveal" style="--d:0.24s"><h4>Week 4</h4><div class="lec"><span>Lecture 10</span><span class="mini" role="img" aria-label="Video, PDF and task"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg><svg class="icon" aria-hidden="true"><use href="#i-tasks"/></svg></span></div><div class="lec"><span>Lecture 11</span><span class="mini" role="img" aria-label="Video, PDF and task"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg><svg class="icon" aria-hidden="true"><use href="#i-tasks"/></svg></span></div><div class="lec"><span>Lecture 12</span><span class="mini" role="img" aria-label="Video, PDF and task"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg><svg class="icon" aria-hidden="true"><use href="#i-tasks"/></svg></span></div>
+<div class="wk-task"><svg class="icon" aria-hidden="true"><use href="#i-tasks"/></svg><span>Weekly task</span></div></article><article class="week week--month reveal" style="--d:0.3s"><div class="trophy"><svg class="icon" aria-hidden="true"><use href="#i-trophy"/></svg></div>
+<div><h4>Monthly task</h4><p>A challenge that brings the whole month together.</p></div></article></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRIVATE FOLLOW-UP ============ -->
+<section class="section private" id="private">
+  <div class="container split">
+    <div>
+      <span class="badge-private reveal"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg>Exclusive feature</span>
+      <h2 class="reveal">Private follow-up with a monitor for any problem</h2>
+      <p class="lead reveal">You won't get stuck at the first obstacle. If anything goes wrong while you learn, you reach your monitor and we solve it together.</p>
+      <ul class="checks reveal">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Reviewing your code and fixing errors.</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Re-explaining the point you missed in a different way.</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Guiding your next steps so you stay focused.</span></li>
+      </ul>
+      <a class="btn btn-accent reveal" href="https://wa.me/201104534626" target="_blank" rel="noopener noreferrer" data-social="whatsapp"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-wa"/></svg>Ask about private follow-up</a>
+    </div>
+    <div class="private-visual reveal" style="--d:.1s">
+      <div class="frame"><img src="assets/images/errors.webp" loading="lazy" alt="Solving common programming errors"></div>
+      <div class="chat" role="img" aria-label="Example of a private follow-up chat">
+        <span class="tag">Example chat</span>
+        <div class="bubble me">I get an error on line 7 and I don't understand why.</div>
+        <div class="bubble mon"><b>Monitor</b>Send me the code and a screenshot of the error, and we'll go through it step by step.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TASKS ============ -->
+<section class="section section--mid" id="tasks">
+  <div class="container tasks-grid">
+    <div class="tasks-media reveal">
+      <div class="a"><img src="assets/images/practice.webp" loading="lazy" alt="Hands-on practice with problems"></div>
+      <div class="b"><img src="assets/images/exercises.webp" loading="lazy" alt="Course exercises"></div>
+    </div>
+    <div>
+      <div class="sec-head" style="margin-bottom:0">
+        <span class="eyebrow reveal"><span class="num">04</span>Tasks</span>
+        <h2 class="reveal">Tasks that make it stick</h2>
+        <p class="reveal">Practice is the fastest way to understand, so the course is built on three levels of tasks.</p>
+      </div>
+      <div class="ladder">
+        <div class="step reveal"><span class="no">01</span><div class="body"><h3>A task for every lecture</h3><p>A quick exercise right after the lecture to lock in the new idea.</p></div></div>
+        <div class="step reveal" style="--d:.08s"><span class="no">02</span><div class="body"><h3>A weekly task</h3><p>Problems that combine the week's lectures and connect the ideas.</p></div></div>
+        <div class="step reveal" style="--d:.16s"><span class="no">03</span><div class="body"><h3>A monthly task</h3><p>A bigger challenge that measures your progress and reviews everything you learned.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="section" id="pricing">
+  <div class="container pricing-grid">
+    <div>
+      <span class="eyebrow reveal"><span class="num">05</span>Subscription</span>
+      <h2 class="reveal">Subscribe and start today</h2>
+      <p class="lead reveal">One monthly subscription gives you everything you need to learn from zero.</p>
+      <ul class="why-list">
+        <li class="reveal"><strong>50</strong><span>lectures from zero to problem solving</span></li>
+        <li class="reveal" style="--d:.07s"><strong>~17</strong><span>weeks to finish the course at 3 lectures a week</span></li>
+        <li class="reveal" style="--d:.14s"><strong>1:1</strong><span>private follow-up: you never learn alone</span></li>
+      </ul>
+    </div>
+    <div class="price-card reveal" style="--d:.1s">
+      <span class="plan">Monthly subscription</span>
+      <div class="price" data-price><span class="ask">Contact us for the subscription price</span></div>
+      <ul>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>3 lectures every week</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>A video lesson for every lecture</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>A PDF for every lecture</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Tasks for every lecture + weekly and monthly tasks</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Private follow-up with a monitor</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>A 50-lecture curriculum that starts from zero</li>
+      </ul>
+      <div class="btns">
+        <a class="btn btn-primary btn-block" href="https://wa.me/201104534626" target="_blank" rel="noopener noreferrer" data-social="whatsapp"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-wa"/></svg>Subscribe on WhatsApp</a>
+        <a class="btn btn-ghost btn-block" href="https://t.me/muh_syd" target="_blank" rel="noopener noreferrer" data-social="telegram"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-tg"/></svg>Or message us on Telegram</a>
+      </div>
+      <p class="note">Message us and we'll confirm the subscription steps.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACADEMY ============ -->
+<section class="section section--mid academy" id="academy">
+  <div class="container split">
+    <div class="academy-visual reveal"><div class="frame"><img src="assets/images/instructor.webp" loading="lazy" alt="The instructor at NextGen Academy"></div></div>
+    <div>
+      <span class="eyebrow reveal"><span class="num">06</span>NextGen Academy</span>
+      <h2 class="reveal">An academy that builds programmers by practice</h2>
+      <p class="lead reveal">NextGen Academy teaches programming and problem solving with a simple philosophy: learn, practice, build, then evolve.</p>
+      <ul class="values reveal">
+        <li><b>L</b><span>Learn<small>Learn</small></span></li>
+        <li><b>P</b><span>Practice<small>Practice</small></span></li>
+        <li><b>B</b><span>Build<small>Build</small></span></li>
+        <li><b>E</b><span>Evolve<small>Evolve</small></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow reveal"><span class="num">07</span>A look inside</span>
+      <h2 class="reveal">What the lectures look like</h2>
+      <p class="reveal">Click any image to enlarge it.</p>
+    </div>
+    <div class="gallery"><button type="button" class="shot tall reveal" style="--d:0.00s" data-caption="Lecture 3 · Operating systems: files, folders and paths"><img src="assets/images/lecture-03.webp" loading="lazy" alt="Lecture 3 cover"></button><button type="button" class="shot  reveal" style="--d:0.05s" data-caption="Logical thinking"><img src="assets/images/logical-thinking.webp" loading="lazy" alt="Logical thinking lecture"><span class="cap">Logical thinking</span></button><button type="button" class="shot  reveal" style="--d:0.10s" data-caption="Your first C++ program"><img src="assets/images/hello-world.webp" loading="lazy" alt="Writing and running the first program"><span class="cap">Your first C++ program</span></button><button type="button" class="shot  reveal" style="--d:0.15s" data-caption="Common errors"><img src="assets/images/errors.webp" loading="lazy" alt="Common programming errors"><span class="cap">Common errors</span></button><button type="button" class="shot  reveal" style="--d:0.20s" data-caption="Practice"><img src="assets/images/practice.webp" loading="lazy" alt="Hands-on practice"><span class="cap">Practice</span></button></div>
+  </div>
+  <dialog id="lightbox" class="lightbox" aria-label="Image preview">
+    <button class="lb-close" type="button" aria-label="Close"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg></button>
+    <img alt="">
+    <p class="lb-cap"></p>
+  </dialog>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section section--mid" id="faq">
+  <div class="container faq-grid">
+    <div class="faq-side">
+      <span class="eyebrow reveal"><span class="num">08</span>FAQ</span>
+      <h2 class="reveal">Questions you may have</h2>
+      <p class="reveal">Can't find your answer here? Message us directly and we'll reply.</p>
+      <img class="reveal" src="assets/images/questions.webp" loading="lazy" alt="">
+    </div>
+    <div class="faq-list"><details class="faq reveal" name="faq" open><summary><span>Do I need any previous programming experience?</span><svg class="icon plus" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="ans">No. The course starts from zero with an introduction to programming basics and logical thinking before you write your first program.</div></details><details class="faq reveal" name="faq"><summary><span>What do I get with each lecture?</span><svg class="icon plus" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="ans">A video lesson, a PDF for the lecture, and practice tasks to apply what you learned.</div></details><details class="faq reveal" name="faq"><summary><span>How many lectures do I get each week?</span><svg class="icon plus" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="ans">Three lectures every week. At that pace the full course (50 lectures) takes about 17 weeks.</div></details><details class="faq reveal" name="faq"><summary><span>What is the private follow-up?</span><svg class="icon plus" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="ans">A private follow-up with a monitor who helps you solve any problem you hit while learning, such as code errors or a concept you didn't understand.</div></details><details class="faq reveal" name="faq"><summary><span>Are there tasks beyond the lecture tasks?</span><svg class="icon plus" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="ans">Yes. Besides the task for each lecture, there are weekly tasks and monthly tasks.</div></details><details class="faq reveal" name="faq"><summary><span>How do I subscribe?</span><svg class="icon plus" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="ans">Message us on WhatsApp or Telegram and we'll confirm the subscription steps with you.</div></details></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / CTA ============ -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="cta-box reveal">
+      <span class="eyebrow"><span class="num">09</span>Get in touch</span>
+      <h2 style="margin-top:1rem">Ready to start your C++ journey?</h2>
+      <p class="lead">Reach out through whichever channel you prefer and start your first lecture.</p>
+      <div class="contact-grid">
+        <a class="contact-card" href="https://wa.me/201104534626" target="_blank" rel="noopener noreferrer" data-social="whatsapp"><span class="ico"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-wa"/></svg></span><b>WhatsApp</b><span>Message us directly to subscribe or ask.</span><span class="go">Start chat<svg class="icon i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+        <a class="contact-card" href="https://t.me/muh_syd" target="_blank" rel="noopener noreferrer" data-social="telegram"><span class="ico"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-tg"/></svg></span><b>Telegram</b><span>Talk to us on Telegram.</span><span class="go">Message us<svg class="icon i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+        <a class="contact-card" href="https://www.facebook.com/profile.php?id=61574770233213" target="_blank" rel="noopener noreferrer" data-social="facebook"><span class="ico"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-fb"/></svg></span><b>Facebook</b><span>Follow my Facebook profile.</span><span class="go">Visit profile<svg class="icon i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+        <a class="contact-card" href="https://www.facebook.com/share/19Zec24SFm" target="_blank" rel="noopener noreferrer" data-social="page"><span class="ico"><svg class="icon stroke" aria-hidden="true"><use href="#i-cap"/></svg></span><b>Academy page</b><span>Follow NextGen Academy news.</span><span class="go">Visit page<svg class="icon i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="NextGen Academy" width="121" height="96" loading="lazy">
+        <p>We teach programming clearly and build programmers who think and solve problems.</p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <div class="footer-links"><a href="#curriculum">Curriculum</a><a href="#how">How it works</a><a href="#private">Private follow-up</a><a href="#tasks">Tasks</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+      </div>
+      <div>
+        <h4>Follow us</h4>
+        <div class="socials">
+          <a href="https://wa.me/201104534626" target="_blank" rel="noopener noreferrer" data-social="whatsapp" aria-label="WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+          <a href="https://t.me/muh_syd" target="_blank" rel="noopener noreferrer" data-social="telegram" aria-label="Telegram"><svg aria-hidden="true"><use href="#i-tg"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=61574770233213" target="_blank" rel="noopener noreferrer" data-social="facebook" aria-label="Facebook"><svg aria-hidden="true"><use href="#i-fb"/></svg></a>
+          <a href="https://www.facebook.com/share/19Zec24SFm" target="_blank" rel="noopener noreferrer" data-social="page" aria-label="Academy page"><svg class="stroke" aria-hidden="true"><use href="#i-cap"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year>2026</span> NextGen Academy. All rights reserved.</span><span>C++ — from zero to confident</span></div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/201104534626" target="_blank" rel="noopener noreferrer" data-social="whatsapp" aria-label="Chat on WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
